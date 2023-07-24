@@ -27,7 +27,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "gradient-start": "#ff8938",
+              "gradient-end": "#da373d",
             },
           },
         },
@@ -202,7 +203,7 @@
       </section>
       <!-- red review section  -->
       <section
-        class="my-32 flex items-center flex-col lg:flex-row gap-12 justify-between bg-gradient-to-r from-orange-600 to-red-600 lg:px-16 px-6 py-20 rounded-xl"
+        class="my-32 flex items-center flex-col lg:flex-row gap-12 justify-between bg-gradient-to-r from-gradient-start to-gradient-end lg:px-16 px-6 py-20 rounded-xl"
       >
         <!-- content  -->
         <div class="text max-w-md text-white space-y-6">
@@ -222,6 +223,7 @@
         </div>
         <!-- review -->
         <div class="lg:p-8">
+          <!-- review 1  -->
           <div
             class="p-10 border-2 rounded-lg bg-white opacity-10 max-w-md relative"
           >
@@ -252,6 +254,11 @@
             </p>
             <h3 class="font-bold">Ilham Yuda</h3>
             <p class="text-gray-800">Businesswomen</p>
+            <img
+              src="./images/circles.png"
+              class="absolute right-4 bottom-8"
+              alt=""
+            />
           </div>
           <!-- card 3  -->
           <div
@@ -268,5 +275,56 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer p-10 bg-base-200 text-base-content">
+        <div>
+          <span class="footer-title">Services</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span class="footer-title">Company</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <span class="footer-title"> Subscribe to our Newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="l"
+                class="mt-6 border-b-2 border-black w-4/5 bg-transparent pr-16"
+              />
+              <button
+                class="btn absolute ml-8 bg-gradient-to-r from-gradient-start to-gradient-end top-0 right-0 rounded-full"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="footer footer-center p-4 bg-base-200 text-base-content">
+          <div>
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
