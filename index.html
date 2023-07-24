@@ -225,7 +225,7 @@
         <div class="lg:p-8">
           <!-- review 1  -->
           <div
-            class="p-10 border-2 rounded-lg bg-white opacity-10 max-w-md relative"
+            class="p-10 border-2 rounded-lg bg-white opacity-25 max-w-md relative"
           >
             <img
               src="./images/client.png"
@@ -241,11 +241,11 @@
           </div>
           <!-- card-2  -->
           <div
-            class="p-10 border-2 rounded-lg bg-white -mt-16 -ml-10 mr-10 relative z-10 max-w-md"
+            class="p-10 border-2 rounded-lg bg-white -mt-16 lg:-ml-10 lg:mr-10 relative z-10 max-w-md"
           >
             <img
               src="./images/client.png"
-              class="absolute -mt-16 -ml-16 border-4 border-white rounded-full bg-white"
+              class="absolute -mt-16 lg:-ml-16 border-4 border-white rounded-full bg-white"
               alt=""
             />
             <p class="text-gray-500">
@@ -262,7 +262,7 @@
           </div>
           <!-- card 3  -->
           <div
-            class="p-10 border-2 rounded-lg bg-white opacity-10 -mt-20 max-w-md relative"
+            class="p-10 border-2 rounded-lg bg-white opacity-25 -mt-20 max-w-md relative"
           >
             <img src="./images/client.png" class="absolute -mt-10" alt="" />
             <p class="text-gray-500">
@@ -275,8 +275,21 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer p-10 bg-base-200 text-base-content">
+    <footer class="bg-base-200 p-10">
+      <div class="flex justify-between py-10 lg:px-40">
+        <dir>
+          <img src="./images/cup.png" width="45px" alt="" />
+        </dir>
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <h3>Ready to get started</h3>
+          <button
+            class="btn bg-gradient-to-r from-gradient-start to-gradient-end"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div class="footer text-base-content lg:ml-20">
         <div>
           <span class="footer-title">Services</span>
           <a class="link link-hover">Branding</a>
@@ -298,22 +311,28 @@
           <a class="link link-hover">Cookie policy</a>
         </div>
         <div>
-          <span class="footer-title"> Subscribe to our Newsletter</span>
+          <span class="text-black font-bold">
+            Subscribe to our <br />
+            Newsletter</span
+          >
           <div class="form-control w-80">
-            <label class="label">
-              <span class="label-text">Enter your email address</span>
-            </label>
+            <label class="label"> </label>
             <div class="relative">
               <input
                 type="text"
-                placeholder="l"
-                class="mt-6 border-b-2 border-black w-4/5 bg-transparent pr-16"
+                placeholder="Enter your email address"
+                class="mt-2 border-b-2 border-black w-4/5 bg-transparent lg:pr-12 py-2 px-2"
               />
               <button
                 class="btn absolute ml-8 bg-gradient-to-r from-gradient-start to-gradient-end top-0 right-0 rounded-full"
               >
                 <i class="fa-solid fa-chevron-right"></i>
               </button>
+              <div class="flex gap-4 text-2xl mt-2">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
             </div>
           </div>
         </div>
